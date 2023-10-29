@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css'
 import List from './Components/List'
+import Form from './Components/Form'
 
 //________________________________________________________________________________________________
 
@@ -61,6 +62,7 @@ function App() {
     <div className='App'>
       <h1>Misu subs</h1>
       <List subs={subs}/>
+      <Form/>
     </div>
   );
 }
