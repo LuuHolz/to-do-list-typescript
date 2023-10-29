@@ -2,16 +2,11 @@ import { useState, useEffect } from 'react';
 import './App.css'
 import List from './Components/List'
 import Form from './Components/Form'
+import {Sub} from './type'
+
 
 //________________________________________________________________________________________________
 
-
-interface Sub {
-  nick: string,
-  avatar: string,
-  subMonths: number,
-  description?: string
-}
 
 // interface Persona {
 //   name: string,
