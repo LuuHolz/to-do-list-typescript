@@ -49,6 +49,9 @@ function App() {
     setSubs(INITIAL_STATE)
   }, [])
   
+  const handleNewSub = (newSub: Sub) : void => {
+    setSubs(subs => [...subs, newSub])
+  }
 
 //________________________________________________________________________________________________
 
@@ -57,7 +60,7 @@ function App() {
     <div className='App'>
       <h1>Misu subs</h1>
       <List subs={subs}/>
-      <Form/>
+      <Form onNewSub={setSubs}/>
     </div>
   );
 }
